@@ -3,6 +3,8 @@
 ## Overview
 This project extends a locally hosted **Wazuh SIEM** into a hybrid, **Cloud-Based SOAR (Security Orchestration, Automation, and Response)** pipeline using permanently free and open-source cloud services. Whenever a high-severity alert (`level >= 7`) fires on-premises, Wazuh dispatches a JSON webhook outbound over HTTPS to **Shuffle Cloud**, which automatically enriches attacker indicators via **AbuseIPDB** and delivers formatted, analyst-ready incident alerts to a dedicated **Discord `#soc-alerts`** channel in under five seconds—with zero inbound router ports exposed.
 
+[Read the Full Technical Breakdown on Medium](https://medium.com/@pompey.lamont01/from-raw-telemetry-to-automated-triage-building-a-zero-cost-enterprise-siem-cloud-soar-pipeline-d47e139d11f6?sharedUserId=pompey.lamont01)
+
 ---
 
 ## Architecture & Automated Data Flow
