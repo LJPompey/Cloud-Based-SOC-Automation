@@ -70,4 +70,13 @@ Configured Wazuh's native `shuffle` integrator with a severity threshold of `lev
 * **Execution Telemetry:** Shuffle Cloud logged a successful run (Webhook -> AbuseIPDB -> HTTP 204), automatically pulling the live AbuseIPDB confidence score and country code and posting the enriched alert to `#soc-alerts` within seconds.
 * **Operational Impact:** Eliminates manual copy-paste IP lookups during Tier 1 alert triage, reducing Mean Time to Triage (MTTT) while keeping all sensitive lab infrastructure safely behind NAT with outbound-only HTTPS communication.
 
-*(Add screenshots to `/assets/`: `shuffle-workflow-canvas.png`, `discord-enriched-alert.png`, `wazuh-integrations-log.png`)*
+## Screenshots & Proof of Execution
+
+### 1. Shuffle Cloud SOAR Playbook Canvas
+![Shuffle Cloud Workflow](shuffle-workflow-canvas.png)
+
+### 2. Automated Enriched Alert in Discord (#soc-alerts)
+![Discord Enriched SOC Alert](discord-enriched-alert.png)
+
+### 3. Wazuh Outbound Webhook Execution Log
+![Wazuh Integrations Log](wazuh-integrations-log.png)
